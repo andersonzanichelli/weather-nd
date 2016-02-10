@@ -25,7 +25,7 @@ weather.now = function(req, res, next) {
 
 
 server.get('/hello/:param', weather.hello);
-server.get('/weather', weather.now);
+server.post('/weather', weather.now);
 
 server.listen(port, function() {
   console.log('%s listening at server port %s', 'Second Weather Info', port);
